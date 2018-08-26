@@ -5,30 +5,18 @@ I made this because I downloaded a bunch of public domain jazz recordings from a
 
 This would come in handy for any project that involves downloading a lot of recordings from archive.org and trying to make industrial music out of them. I expect this repo to be a household name within the year.
 
-Prerequisites:
+**Prerequisites:**
+- Bash
+- Lame (for MP3 decoding)
+- Soundstretch (for getting the BPM)
 
--Bash
+**Instructions:**
+- Clone the repo
+- Put your MP3s in the "in" folder
+- Run batch-decode.sh
+- Retrieve your files from the "out" folder
 
--Lame (for MP3 decoding)
-
--Soundstretch (for getting the BPM)
-
-
-Instructions:
-
--Clone the repo
-
--Put your MP3s in the "in" folder
-
--Run batch-decode.sh
-
--Retrieve your files from the "out" folder
-
-
-Future Enhancements:
-
--Parameterize source directory, target directory
-
--Parameterize desired sample rate and format
-
--Make a Dockerfile and docker-compose template so I can run this quickly on a machine that doesn't have LAME, Soundstretch, or Bash pre-installed
+**Future Enhancements:***
+- Parameterize source directory, target directory
+- Parameterize desired sample rate and format
+- Make a Dockerfile and docker-compose template so I can run this quickly on a machine that doesn't have LAME, Soundstretch, or Bash pre-installed
